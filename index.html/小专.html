@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能药盒设置</title>
+  <link href="./xiaozhuan/小专.css" rel="stylesheet">
+</head>
+<body>
+  <h1>智能药盒设置</h1>
+  <form id="reminderForm" action="/submit" method="post">
+    
+    <fieldset>
+      <legend>提醒 1</legend>
+      时间：<input type="time" name="time1" required><br>
+      内容：<input type="text" name="note1" required><br>
+      重复次数：<input type="number" name="repeat1" min="1" max="10" value="3"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>提醒 2</legend>
+      时间：<input type="time" name="time2"><br>
+      内容：<input type="text" name="note2"><br>
+      重复次数：<input type="number" name="repeat2" min="1" max="10" value="3"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>提醒 3</legend>
+      时间：<input type="time" name="time3"><br>
+      内容：<input type="text" name="note3"><br>
+      重复次数：<input type="number" name="repeat3" min="1" max="10" value="3"><br>
+    </fieldset>
+
+    <button type="submit">提交设置</button>
+  </form>
+</body>
+</html>
